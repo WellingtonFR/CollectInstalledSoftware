@@ -1,0 +1,10 @@
+[package]
+name = "first_rust_app"
+version = "0.1.0"
+edition = "2024"
+
+[target.'cfg(windows)'.dependencies]
+winreg = "0.52"
+
+[target.'cfg(unix)'.dependencies]
+which = "4.4.2"
